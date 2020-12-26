@@ -1,0 +1,1 @@
+let addTodoButton = document.getElementsByClassName('addToDo');
