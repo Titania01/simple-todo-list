@@ -1,9 +1,17 @@
-let addTodoButton = document.getElementsById('addToDo');
-let toDoContainer = document.getElementsById('addToDoContainer');
-let inputField = document.getElementsById('addToDo');
+let addToDoButton = document.getElementById('addToDo');
+let toDoContainer = document.getElementById('toDoContainer');
+let inputField = document.getElementById('inputField');
 
-addTodoButton.addEventListener('click', function(){
+addToDoButton.addEventListener('click', function(){
   let paragraph = document.createElement('p')
-  paragraph.innerText = inputField.value;
+  paragraph.classList.add('paragraph-styling')
+  paragraph.innerHTML = inputField.value;
   toDoContainer.appendChild(paragraph);
+  inputField.value = '';
+  paragraph.addEventListener('click', function(){
+    paragraph.style.textDecoration = 'line-through';
+  })
+  paragraph.addEventListener('dblclick', function(){
+      toDoContainer.removeChild(paragraph);
+  })
 })

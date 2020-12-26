@@ -33,4 +33,14 @@ body {
   border: 1px solid black;
   font-size: 30px;
   border-radius: 5px;
+  outline: none;
+}
+
+.to-dos {
+  margin-top: 25px;
+}
+
+.paragraph-styling {
+  cursor: pointer;
+  font-size: 25px;
 }
