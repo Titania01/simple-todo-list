@@ -11,3 +11,12 @@ body {
   width: 50%;
   margin: 5rem auto;
 }
+
+.container {
+  width: 20rem;
+}
+
+.inputfield {
+  width: 15rem;
+  height: 2rem;
+}
