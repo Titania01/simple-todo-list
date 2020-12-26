@@ -19,5 +19,8 @@ body {
 .inputfield {
   width: 15rem;
   height: 2rem;
-  padding-left: 0.5rem;
+  border: 1px solid black;
+  outline: none;
+  vertical-align: middle;
+  font-size: 25px;
 }
